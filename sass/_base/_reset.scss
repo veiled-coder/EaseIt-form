@@ -1,0 +1,115 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    font-family: $font-mont;
+    
+    // overflow: hidden;
+    
+}
+.body{
+    
+        display: grid;
+        grid-template-columns: 1fr [center-start] minmax(min-content,100rem) [center-end] 1fr;
+        grid-template-rows: auto;
+        position: relative;
+       
+        
+    }
+  .body_others{
+      align-items: center;
+     justify-items: center;
+  }  
+
+
+
+a {
+    text-decoration: none;
+}
+.btn a {
+    color: $color-yellow;
+}
+.h3_title{
+    color: $color-yellow;
+    font-size: 2.5rem;
+    font-family: $font-serif;
+    position: absolute;
+   align-self: start;
+   left: 28%;
+   top: 4rem;
+   color: $color-deepblue;
+    letter-spacing: 1px;
+     
+}
+.bigForms_section{
+        
+    grid-column: center-start/center-end;
+    display: grid;
+    align-items: center;
+    border-radius: 2.5rem;
+   font-size: 1.5rem;
+    background-color: $color-lightblue; 
+    height: 70vh;
+    width: 70%;
+   
+ }
+
+ .bigForm{
+     margin-top: 3rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+.inputField{
+        @include inputstyle($color-deepblue);
+    
+}
+
+.form_Or{
+        margin-top: 3rem;
+      font-weight: 600;
+      font-size: 1.5rem;
+}
+
+.btn{
+    @include btnstyle;
+}
+.white{
+    color: $color-white;
+}
+
+.acc_btn{
+    width: 70%;
+    margin-top: 8rem;
+    border-radius: 0px;
+    text-align: center;
+    }
+    .content_p{
+        font-weight: 500;
+        font-size: 1.5rem;
+        //  word-spacing: .3rem;
+    }
+    .content_p--left{
+        padding-left:14.5%;   
+        align-self: stretch;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    .easeIt_logo{
+        position: absolute;
+        left: 16%;
+        top: -7rem;
+        width: 22rem;
+        height: auto;
+    }

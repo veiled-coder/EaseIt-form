@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+$color-lightblue:#BFC1FD;
+$color-deepblue:#161859;
+$color-yellow:#D39E2A;
+$color-black:#0E0E1B;
+$color-white:#F7F7FD;
+$font-mont: 'Montserrat', sans-serif;
+$font-serif: 'DM Serif Display', serif;
+
+@mixin inputstyle($borderColor:$color-yellow){
+    background-color: transparent;
+    border: 1.9px $borderColor solid;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+     width: 69.43%;
+    // margin-top: 3rem;
+
+}
+%flexcol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+%content {
+    display: flex;
+    flex-direction: column;
+}
+@mixin btnstyle ($bg-color:$color-deepblue ,$pd:1.5rem 0rem){
+    // width: 100%;
+    background-color: $bg-color;
+    text-align: center;
+    color: $color-yellow;
+    border: 1px $color-deepblue solid;
+    padding:$pd;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-top: 4rem;
+    width: 70%;
+    height: min-content;
+    
+    
+}
+
+@mixin h2style($color:black){
+    padding-bottom: 4rem;
+    font-size: 4rem;
+    font-family: $pirata;
+    color: $color;
+    word-spacing: .5rem;
+    letter-spacing: .2rem;
+    
+    }
+    @mixin formTitle{
+        color: $color-deepblue;
+    }
+    

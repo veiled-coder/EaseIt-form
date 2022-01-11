@@ -1,0 +1,15 @@
+{
+  "name": "veiled-coder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ease":"node-sass sass/easeIt.scss sass/easeIt.css --w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

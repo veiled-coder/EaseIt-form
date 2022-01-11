@@ -1,0 +1,23 @@
+.profile_input{
+    margin-top: 2rem;
+}
+.profile_pics{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: $color-white;
+    align-self: center;
+    margin-bottom: 2.5rem;
+    position: relative;
+&--camera{
+    position: absolute;
+    bottom:.5rem;
+    right: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+ background-color: rgb(245, 227, 194);
+    border-radius: 50%;
+    padding: .6rem;
+    filter: invert(99%) sepia(3%) saturate(207%) hue-rotate(351deg) brightness(112%) contrast(100%);   
+}
+}

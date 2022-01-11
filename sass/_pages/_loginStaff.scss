@@ -1,0 +1,45 @@
+.loginStaff {
+   
+
+   
+    
+    
+     
+    &_p{
+        margin-top: 4rem;
+        font-weight: 500;
+    }
+    
+    &_input{
+        margin-bottom: 2rem;
+     
+    }
+    &_acc{
+        margin-top: 14rem;
+    }
+}
+
+
+.rmbForgot{
+margin-top: -2rem;
+width: 70%;
+display: flex;
+justify-content: space-between;
+// margin-left: -1rem;
+color: $color-deepblue;
+font-size: 1.2rem;
+font-weight: 300;
+
+}
+.rmb_div{
+    display: flex;
+    align-items: center;
+    
+}
+.rmb_me--text{
+    margin-left: -.4rem;
+}
+.forgot{
+    color: $color-deepblue;
+    font-weight: 600;
+}
