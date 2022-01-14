@@ -6,24 +6,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="sass/easeIt.css">
 </head>
-<body class="body">
+<body>
     
  
+ 
+   
+  <img src="/images/easeIt.png" class="easeIt_logo easeIt_logo--login" alt="easeIt_logo">
+  <h3 class="login_title">Login to Ease-it</h3> 
   
-<img src="/images/easeIt.png" class="easeIt_logo" alt="easeIt_logo">
-<h3 class="login_title">Login to Ease-it</h3> 
-
-
 
 <section class="loginForm_section">
+
   <!-- TEACHER/TRAINER/ORGANIZATION LOGIN FORM -->
 <form class="login_form login_teachers" name="loginForm">
 <div class="login_form--content login_teachers--content">
-<p class="login_teachers--p content_p--left">If you are a teacher, lecturer or trainer<span>search for your school or organisation here</span> and tap the link to access the login page.</p>
+<div class="inner_container">  
+<p class="login_text login_text--teachers">If you are a teacher, lecturer or trainer<span> search for your school or organisation here</span> and tap the link to access the login page.</p>
   
 <label for="schoolLabel" ></label>
-<input type="text" id="schoolLabel" class="login_input inputField" placeholder="School/Organisation">
-<button class="btn"><a href="loginStaff.html">CONTINUE</a></button>
+<input type="text" id="schoolLabel" class="login_input login_input--1 inputField" placeholder="School/Organisation">
+<button class="btn btn_login btn_login--continue"><a href="loginStaff.html">CONTINUE</a></button>
+</div>
 </div>
 </form> 
 
@@ -32,26 +35,34 @@
 
 <form class="login_form login_students">
 <div class="login_form--content login_students--content">
-<p class="login_students--p content_p--left">For students and trainees</p>
+<div class="inner_container inner_container--students">  
+<p class="login_text login_text--students">For students and trainees</p>
          
 <label for="schoolLabel" ></label>
-<input type="email" id="schoolLabel" class="login_input inputField" placeholder="Email Address">
+<input type="email" id="schoolLabel" class="login_input login_input--2 inputField" placeholder="Email Address">
         
 <label for="schoolLabel" ></label>
-<input type="password" id="schoolLabel" class="login_input inputField" placeholder="Password">
+<input type="password" id="schoolLabel" class="login_input login_input--3 inputField" placeholder="Password">
+<div class="rmb-fgt">
+<div class="rmb"> 
+ <input type="checkbox">  
+<label>Remember me</label>
+</div>
 
-<button class="btn">LOGIN</button>
-
+<p class="fgt">Forgot Password?</p>
+</div>
+<button class="btn btn_login">LOGIN</button>
+</div>
 <p class="form_Or">or login with</p>
 
-<div class="login_students--icons">
-<a href="#"><img src="/icons/facebook.svg" alt="facebook-icon" class="login_students--icon"></a>
-<a href="#"><img src="/icons/google3.svg" alt="google-icon" class="login_students--icon"></a>
-<a href="#"><img src="/icons/linkedin-with-circle.svg" alt="linkedIn-icon" class="login_students--icon"></a>
+<div class="social_icons login_students--icons index_icons">
+<a href="#"><img src="/icons/facebook.svg" alt="facebook-icon" class="social_icon index_icon login_students--icon"></a>
+<a href="#"><img src="/icons/google3.svg" alt="google-icon" class="social_icon index_icon login_students--icon"></a>
+<a href="#"><img src="/icons/linkedin-with-circle.svg" alt="linkedIn-icon" class="social_icon index_icon login_students--icon"></a>
 </div>
 
 </div>
-    
+ </div>   
 </form> 
 </section>
 

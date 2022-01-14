@@ -16,17 +16,19 @@ body {
   width: 100%;
   position: relative;
   font-family: "Montserrat", sans-serif;
-}
-
-.body {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr [center-start] minmax(min-content, 100rem) [center-end] 1fr;
-      grid-template-columns: 1fr [center-start] minmax(-webkit-min-content, 100rem) [center-end] 1fr;
-      grid-template-columns: 1fr [center-start] minmax(min-content, 100rem) [center-end] 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .body_others {
@@ -49,11 +51,6 @@ a {
   font-size: 2.5rem;
   font-family: "DM Serif Display", serif;
   position: absolute;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
-  left: 28%;
-  top: 4rem;
   color: #161859;
   letter-spacing: 1px;
 }
@@ -68,8 +65,8 @@ a {
   border-radius: 2.5rem;
   font-size: 1.5rem;
   background-color: #BFC1FD;
-  height: 70vh;
-  width: 70%;
+  max-width: 80rem;
+  width: 95%;
 }
 
 .bigForm {
@@ -92,13 +89,13 @@ a {
 .inputField {
   background-color: transparent;
   border: 1.9px #161859 solid;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  width: 69.43%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 100%;
 }
 
 .form_Or {
-  margin-top: 3rem;
+  margin-top: 2em;
   font-weight: 600;
   font-size: 1.5rem;
 }
@@ -111,8 +108,8 @@ a {
   padding: 1.5rem 0rem;
   font-size: 1.7rem;
   font-weight: bolder;
-  margin-top: 4rem;
-  width: 70%;
+  margin-top: 1.1em;
+  width: 100%;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -123,10 +120,13 @@ a {
 }
 
 .acc_btn {
-  width: 70%;
-  margin-top: 8rem;
+  max-width: 56rem;
+  width: 60%;
   border-radius: 0px;
   text-align: center;
+  padding: 1em 0em;
+  position: absolute;
+  font-size: 1.5rem;
 }
 
 .content_p {
@@ -145,8 +145,8 @@ a {
 
 .easeIt_logo {
   position: absolute;
-  left: 16%;
-  top: -7rem;
+  left: 23em;
+  top: -6em;
   width: 22rem;
   height: auto;
 }
@@ -155,17 +155,30 @@ a {
   grid-column: center-start/center-end;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-column-gap: 3rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90rem;
+  max-width: 90%;
+  font-size: 1.5rem;
+}
+
+.easeIt_logo--login {
+  position: absolute;
+  left: 24em;
+  top: -7em;
+  width: 22rem;
+  height: auto;
 }
 
 .login_form {
   padding-top: 4rem;
-  height: 55rem;
   background-color: #BFC1FD;
   border-radius: 2.5rem;
 }
@@ -184,14 +197,79 @@ a {
 }
 
 .login_title {
-  grid-column: center-start/center-end;
-  margin-left: 3rem;
+  position: absolute;
+  top: 3em;
+  left: 14.5em;
   color: #D39E2A;
   font-size: 2.5rem;
   font-style: "DM Serif Display", serif;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
-.login_teachers--p {
+.login_input {
+  border-color: #D39E2A;
+  width: 100%;
+}
+
+.login_input--1 {
+  margin-bottom: 4em;
+}
+
+.login_input--2 {
+  margin-bottom: 2em;
+}
+
+.login_input--3 {
+  margin-bottom: .5em;
+}
+
+.inner_container {
+  width: 85%;
+}
+
+.inner_container--students {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rmb-fgt {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 4em;
+  font-size: 1.2rem;
+}
+
+.rmb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fgt {
+  font-weight: bold;
+}
+
+.login_text {
+  font-size: 1.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,32 +279,18 @@ a {
           flex-direction: column;
   font-weight: 500;
   line-height: 1.5;
+  margin-bottom: 1.5em;
 }
 
-.login_students--icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  margin-top: 1.1rem;
+.login_text--students {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
-.login_students--icon {
-  width: 2.2rem;
-  height: 2.2rem;
-  -webkit-filter: invert(0%) sepia(10%) saturate(70%) hue-rotate(237deg) brightness(10%) contrast(99%);
-          filter: invert(0%) sepia(10%) saturate(70%) hue-rotate(237deg) brightness(10%) contrast(99%);
-  margin: 0rem .4rem;
-}
-
-.login_input {
-  border-color: #D39E2A;
-  margin-bottom: 6rem;
-}
-
-.content_p--left {
-  padding-bottom: 5rem;
+.btn_login {
+  width: 100%;
+  padding-top: .863em;
+  padding-bottom: .863em;
 }
 
 input:placeholder-shown {
@@ -253,21 +317,16 @@ input:placeholder-shown {
   padding: 1.5rem 0rem;
   font-size: 1.7rem;
   font-weight: bolder;
-  margin-top: 4rem;
-  width: 70%;
+  margin-top: 1.1em;
+  width: 100%;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  grid-column: 1/-1;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  max-width: 45rem;
-  width: 50%;
-  height: min-content;
-  margin-top: 2rem;
+  width: auto;
   font-weight: 400;
-  padding-top: .7rem;
-  padding-bottom: .7rem;
+  padding: .5em 3em;
+  position: absolute;
+  bottom: 4em;
 }
 
 .noAccount_link {
@@ -275,82 +334,105 @@ input:placeholder-shown {
   font-weight: 700;
 }
 
-@media (max-width: 1024px) {
-  .easeIt_logo {
-    top: 5%;
-    left: -2rem;
-  }
-  .loginForm_section {
-    width: 80%;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+.social_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.index_icons {
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+
+.social_icon {
+  width: 2.2rem;
+  -webkit-filter: invert(0%) sepia(10%) saturate(70%) hue-rotate(237deg) brightness(10%) contrast(99%);
+          filter: invert(0%) sepia(10%) saturate(70%) hue-rotate(237deg) brightness(10%) contrast(99%);
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+@media (max-width: 1440px) {
+  .easeIt_logo--login {
+    position: absolute;
+    left: 16em;
+    top: 20em;
   }
   .login_title {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    margin-left: 10%;
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
+    left: 11em;
+    top: 15em;
   }
-  .content_p--left {
-    padding-left: 0%;
-    -ms-flex-item-align: center;
-        align-self: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .noAccount {
+    bottom: 19em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .noAccount {
+    bottom: 19em;
+  }
+  .easeIt_logo--login {
+    position: absolute;
+    left: -3em;
+    top: 20em;
+  }
+  .login_title {
+    left: 3em;
+    top: 15em;
   }
 }
 
 @media (max-width: 768px) {
-  .body {
-    padding-top: 6rem;
-  }
   .loginForm_section {
     grid-row-gap: 6rem;
   }
-  .easeIt_logo {
-    top: -5%;
-    left: -2rem;
+  .btn_login--continue {
+    margin-bottom: 5em;
   }
-}
-
-.login_title {
-  padding-bottom: 1rem;
+  .login_text--teachers {
+    display: block;
+  }
+  .easeIt_logo--login {
+    left: -2em;
+    top: 1em;
+  }
+  .login_title {
+    left: 2em;
+    top: 7em;
+  }
+  .noAccount {
+    bottom: 10em;
+  }
 }
 
 @media (max-width: 425px) {
-  .body {
-    padding-left: 0rem;
-    padding-right: 0rem;
-    padding-bottom: 4rem;
-    padding-top: 10rem;
-  }
   .login_title {
-    padding-bottom: 5rem;
+    top: 6em;
   }
-  .inputField {
-    width: 90%;
+  .easeIt_logo--login {
+    left: -4em;
   }
-  .loginForm_section {
-    width: 90%;
+  .noAccount {
+    font-size: 1.5rem;
+  }
+  .login_text {
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 375px) {
-  html {
-    font-size: 50%;
+  .noAccount {
+    font-size: 1rem;
+    bottom: 14em;
+  }
+}
+
+@media (max-width: 320px) {
+  .login_form {
+    width: 85%;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
 }
 
@@ -407,8 +489,112 @@ input:placeholder-shown {
   margin-bottom: 2rem;
 }
 
-.signUp_acc {
-  margin-top: 12rem;
+.acc_btn--signUp {
+  bottom: 5em;
+}
+
+.btn_signUp {
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+}
+
+.inner_container--signUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+}
+
+.easeIt_logo--signUp {
+  position: absolute;
+  left: 23em;
+  top: -6em;
+  width: 22rem;
+  height: auto;
+}
+
+.h3_title--signUp {
+  top: 3.4em;
+  left: 16em;
+}
+
+@media (max-width: 1440px) {
+  .easeIt_logo--signUp {
+    left: -1em;
+    top: -2em;
+    width: 22rem;
+    height: auto;
+  }
+  .h3_title--signUp {
+    top: 6em;
+  }
+  .acc_btn--signUp {
+    bottom: 14em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .easeIt_logo--signUp {
+    left: -1em;
+    top: -2em;
+    width: 22rem;
+    height: auto;
+  }
+  .h3_title--signUp {
+    top: 6em;
+    left: 6em;
+  }
+}
+
+@media (max-width: 768px) {
+  .easeIt_logo--signUp {
+    left: -2em;
+    top: -6em;
+    width: 19rem;
+    height: auto;
+  }
+  .h3_title--signUp {
+    top: 2.1em;
+    left: 6em;
+  }
+  .acc_btn--signUp {
+    bottom: 3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .acc_btn--signUp {
+    font-size: 1rem;
+    bottom: 3em;
+  }
+  .h3_title--signUp {
+    top: 2.1em;
+    left: 1em;
+  }
+  .easeIt_logo--signUp {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 320px) {
+  .acc_btn--signUp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .boxes, .content_p--pwdReset2 {

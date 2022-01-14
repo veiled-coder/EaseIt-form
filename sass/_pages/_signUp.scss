@@ -2,6 +2,102 @@
 .signUp_input{
     margin-bottom: 2rem;
 }
-.signUp_acc{
-    margin-top: 12rem;
+.acc_btn--signUp{
+    
+    bottom: 5em;
+   
+}
+.btn_signUp{
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+.inner_container--signUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+.easeIt_logo--signUp{
+    position: absolute;
+    left: 23em;
+    top: -6em;
+    width: 22rem;
+    height: auto;
+}
+.h3_title--signUp{
+    top: 3.4em;
+    left: 16em;
+}
+@media (max-width:1440px){
+    .easeIt_logo--signUp{
+        left: -1em;
+        top: -2em;
+        width: 22rem;
+        height: auto;
+    }
+    .h3_title--signUp{
+        top: 6em;
+        
+    }
+    .acc_btn--signUp{
+    
+        bottom: 14em;
+       
+    }
+}
+@media  (max-width:1024px){
+    .easeIt_logo--signUp{
+        left: -1em;
+        top: -2em;
+        width: 22rem;
+        height: auto;
+    }
+    .h3_title--signUp{
+        top: 6em;
+        left: 6em;
+    }
+}
+
+@media  (max-width:768px){
+    .easeIt_logo--signUp{
+        left: -2em;
+        top: -6em;
+        width: 19rem;
+        height: auto;
+    }
+    .h3_title--signUp{
+        top: 2.1em;
+        left: 6em;
+    }
+    .acc_btn--signUp{
+    
+        bottom: 3em;
+       
+    }
+}
+
+@media  (max-width:768px){
+    .acc_btn--signUp{
+        font-size: 1rem;
+        bottom: 3em;
+       
+    }
+    .h3_title--signUp{
+        top: 2.1em;
+        left: 1em;
+    }
+    .easeIt_logo--signUp{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    }
+
+
+@media  (max-width:320px){
+    .acc_btn--signUp{
+//  padding-left: .1em;
+//  padding-right: .1em;
+ display: flex;
+ flex-direction: column;
+    }
 }
