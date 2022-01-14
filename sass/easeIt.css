@@ -357,33 +357,36 @@ input:placeholder-shown {
   .easeIt_logo--login {
     position: absolute;
     left: 16em;
-    top: 20em;
+    top: 11em;
   }
   .login_title {
     left: 11em;
-    top: 15em;
+    top: 11em;
   }
   .noAccount {
-    bottom: 19em;
+    bottom: 15em;
   }
 }
 
 @media (max-width: 1024px) {
   .noAccount {
-    bottom: 19em;
+    bottom: 7em;
   }
   .easeIt_logo--login {
     position: absolute;
     left: -3em;
-    top: 20em;
+    top: -1em;
   }
   .login_title {
     left: 3em;
-    top: 15em;
+    top: 6em;
   }
 }
 
 @media (max-width: 768px) {
+  body {
+    padding: 12em 1em;
+  }
   .loginForm_section {
     grid-row-gap: 6rem;
   }
@@ -394,27 +397,29 @@ input:placeholder-shown {
     display: block;
   }
   .easeIt_logo--login {
-    left: -2em;
-    top: 1em;
+    left: -3.5em;
+    top: -7em;
   }
   .login_title {
     left: 2em;
-    top: 7em;
+    top: 3em;
   }
   .noAccount {
-    bottom: 10em;
+    bottom: 2em;
   }
 }
 
 @media (max-width: 425px) {
   .login_title {
-    top: 6em;
+    top: 3em;
   }
   .easeIt_logo--login {
+    top: -7em;
     left: -4em;
   }
   .noAccount {
     font-size: 1.5rem;
+    bottom: 3em;
   }
   .login_text {
     font-size: 1.5rem;
@@ -422,9 +427,17 @@ input:placeholder-shown {
 }
 
 @media (max-width: 375px) {
+  .login_title {
+    width: 100%;
+    top: 4em;
+    font-size: 2rem;
+  }
+  .easeIt_logo--login {
+    top: -7em;
+  }
   .noAccount {
     font-size: 1rem;
-    bottom: 14em;
+    bottom: 5em;
   }
 }
 
@@ -527,13 +540,14 @@ input:placeholder-shown {
 
 @media (max-width: 1440px) {
   .easeIt_logo--signUp {
-    left: -1em;
-    top: -2em;
+    left: 12em;
+    top: 10em;
     width: 22rem;
     height: auto;
   }
   .h3_title--signUp {
-    top: 6em;
+    top: 11em;
+    left: 12.5em;
   }
   .acc_btn--signUp {
     bottom: 14em;
@@ -551,6 +565,9 @@ input:placeholder-shown {
     top: 6em;
     left: 6em;
   }
+  .acc_btn--signUp {
+    bottom: 8em;
+  }
 }
 
 @media (max-width: 768px) {
@@ -561,7 +578,7 @@ input:placeholder-shown {
     height: auto;
   }
   .h3_title--signUp {
-    top: 2.1em;
+    top: 2.4em;
     left: 6em;
   }
   .acc_btn--signUp {
@@ -569,7 +586,7 @@ input:placeholder-shown {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
   .acc_btn--signUp {
     font-size: 1rem;
     bottom: 3em;
@@ -586,6 +603,9 @@ input:placeholder-shown {
 }
 
 @media (max-width: 320px) {
+  .h3_title--signUp {
+    top: 3em;
+  }
   .acc_btn--signUp {
     display: -webkit-box;
     display: -ms-flexbox;
