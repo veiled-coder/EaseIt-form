@@ -29,6 +29,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #161859;
 }
 
 .body_others {
@@ -42,7 +43,11 @@ a {
   text-decoration: none;
 }
 
-.btn a {
+.bigForm .btn a {
+  color: white;
+}
+
+.btn_index {
   color: #D39E2A;
 }
 
@@ -132,6 +137,8 @@ a {
 .content_p {
   font-weight: 500;
   font-size: 1.5rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .content_p--left {
@@ -149,6 +156,38 @@ a {
   top: -6em;
   width: 22rem;
   height: auto;
+}
+
+.inner_container {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inner_container--bigForms {
+  width: 70%;
+}
+
+.h3_title--bigForms {
+  top: 3.4em;
+  left: 16em;
+  position: absolute;
+}
+
+.social_icon {
+  width: 2.2rem;
+  -webkit-filter: invert(0%) sepia(10%) saturate(70%) hue-rotate(237deg) brightness(10%) contrast(99%);
+          filter: invert(0%) sepia(10%) saturate(70%) hue-rotate(237deg) brightness(10%) contrast(99%);
+  margin-left: .5em;
+  margin-right: .5em;
 }
 
 .loginForm_section {
@@ -224,23 +263,6 @@ a {
   margin-bottom: .5em;
 }
 
-.inner_container {
-  width: 85%;
-}
-
-.inner_container--students {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .rmb-fgt {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -253,6 +275,7 @@ a {
   width: 100%;
   margin-bottom: 4em;
   font-size: 1.2rem;
+  color: #161859;
 }
 
 .rmb {
@@ -266,6 +289,7 @@ a {
 
 .fgt {
   font-weight: bold;
+  color: #161859;
 }
 
 .login_text {
@@ -345,14 +369,6 @@ input:placeholder-shown {
   padding-bottom: 1em;
 }
 
-.social_icon {
-  width: 2.2rem;
-  -webkit-filter: invert(0%) sepia(10%) saturate(70%) hue-rotate(237deg) brightness(10%) contrast(99%);
-          filter: invert(0%) sepia(10%) saturate(70%) hue-rotate(237deg) brightness(10%) contrast(99%);
-  margin-left: .5em;
-  margin-right: .5em;
-}
-
 @media (max-width: 1440px) {
   .easeIt_logo--login {
     position: absolute;
@@ -384,9 +400,6 @@ input:placeholder-shown {
 }
 
 @media (max-width: 768px) {
-  body {
-    padding: 12em 1em;
-  }
   .loginForm_section {
     grid-row-gap: 6rem;
   }
@@ -449,53 +462,185 @@ input:placeholder-shown {
   }
 }
 
-.loginStaff_p {
-  margin-top: 4rem;
-  font-weight: 500;
+@media (max-width: 1440px) {
+  .easeIt_logo--bigForms {
+    left: 12em;
+    top: 10em;
+    width: 22rem;
+    height: auto;
+  }
+  .h3_title--bigForms {
+    top: 11em;
+    left: 12.5em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .easeIt_logo--bigForms {
+    left: -1em;
+    top: -2em;
+    width: 22rem;
+    height: auto;
+  }
+  .h3_title--bigForms {
+    top: 6em;
+    left: 6em;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 12em 1em;
+  }
+  .easeIt_logo--bigForms {
+    left: -2em;
+    top: -6em;
+    width: 19rem;
+    height: auto;
+  }
+  .h3_title--bigForms {
+    top: 2.4em;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+  .h3_title--bigForms {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .h3_title--bigForms {
+    top: 2.5em;
+  }
+  .easeIt_logo--bigForms {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .inner_container--bigForms {
+    width: 85%;
+  }
+  .acc_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  .h3_title--bigForms {
+    top: 3em;
+  }
+}
+
+@media (max-width: 320px) {
+  .h3_title--bigForms {
+    top: 4em;
+  }
+  html {
+    font-size: 55%;
+  }
+}
+
+.acc_btn--loginStaff {
+  bottom: 5em;
 }
 
 .loginStaff_input {
   margin-bottom: 2rem;
 }
 
-.loginStaff_acc {
-  margin-top: 14rem;
+.loginStaff_input--3 {
+  margin-bottom: .8rem;
 }
 
-.rmbForgot {
-  margin-top: -2rem;
-  width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #161859;
-  font-size: 1.2rem;
-  font-weight: 300;
+.btn_loginStaff {
+  margin-top: .2em;
 }
 
-.rmb_div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.loginStaff_icons {
+  margin-top: 1em;
+  margin-bottom: 3em;
 }
 
-.rmb_me--text {
-  margin-left: -.4rem;
+@media (max-width: 1440px) {
+  .acc_btn--loginStaff {
+    bottom: 15em;
+  }
 }
 
-.forgot {
-  color: #161859;
-  font-weight: 600;
+@media (max-width: 1024px) {
+  .acc_btn--loginStaff {
+    bottom: 10em;
+  }
 }
 
-.pwdReset_acc {
-  margin-top: 37rem;
+@media (max-width: 768px) {
+  .acc_btn--loginStaff {
+    bottom: 3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .acc_btn--loginStaff {
+    bottom: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.inputField_pwdReset {
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+.btn_pwdReset {
+  margin-bottom: 17em;
+}
+
+.acc_btn--pwdReset {
+  bottom: 4em;
+}
+
+@media (max-width: 1440px) {
+  .acc_btn--pwdReset {
+    bottom: 14em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .acc_btn--pwdReset {
+    bottom: 6em;
+  }
+}
+
+@media (max-width: 768px) {
+  .acc_btn--pwdReset {
+    bottom: 3em;
+  }
+}
+
+@media (max-width: 425px) {
+  .acc_btn--pwdReset {
+    bottom: 2em;
+  }
 }
 
 .signUp_input {
@@ -511,20 +656,6 @@ input:placeholder-shown {
   margin-bottom: 1.5em;
 }
 
-.inner_container--signUp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 70%;
-}
-
 .easeIt_logo--signUp {
   position: absolute;
   left: 23em;
@@ -533,54 +664,19 @@ input:placeholder-shown {
   height: auto;
 }
 
-.h3_title--signUp {
-  top: 3.4em;
-  left: 16em;
-}
-
 @media (max-width: 1440px) {
-  .easeIt_logo--signUp {
-    left: 12em;
-    top: 10em;
-    width: 22rem;
-    height: auto;
-  }
-  .h3_title--signUp {
-    top: 11em;
-    left: 12.5em;
-  }
   .acc_btn--signUp {
     bottom: 14em;
   }
 }
 
 @media (max-width: 1024px) {
-  .easeIt_logo--signUp {
-    left: -1em;
-    top: -2em;
-    width: 22rem;
-    height: auto;
-  }
-  .h3_title--signUp {
-    top: 6em;
-    left: 6em;
-  }
   .acc_btn--signUp {
     bottom: 8em;
   }
 }
 
 @media (max-width: 768px) {
-  .easeIt_logo--signUp {
-    left: -2em;
-    top: -6em;
-    width: 19rem;
-    height: auto;
-  }
-  .h3_title--signUp {
-    top: 2.4em;
-    left: 6em;
-  }
   .acc_btn--signUp {
     bottom: 3em;
   }
@@ -591,22 +687,70 @@ input:placeholder-shown {
     font-size: 1rem;
     bottom: 3em;
   }
-  .h3_title--signUp {
-    top: 2.1em;
-    left: 1em;
-  }
-  .easeIt_logo--signUp {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+}
+
+.boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.box {
+  border: 2px solid #161859;
+  padding: 1.2em 1.5em 1.2em 1.5em;
+  margin-left: .4em;
+}
+
+.btn--resend {
+  color: #161859;
+  background-color: #F7F7FD;
+  border-color: #F7F7FD;
+  -webkit-box-shadow: 0px 2px 2px 0px #161859;
+          box-shadow: 0px 2px 2px 0px #161859;
+}
+
+.acc_btn--pwdReset2 {
+  bottom: 4em;
+}
+
+.content_p--receive, .content_p--pwdReset2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.submit_pwdReset2 {
+  margin-bottom: 2em;
+}
+
+.btn--resend {
+  margin-bottom: 10em;
+}
+
+@media (max-width: 1440px) {
+  .acc_btn--pwdReset2 {
+    bottom: 14em;
   }
 }
 
-@media (max-width: 320px) {
-  .h3_title--signUp {
-    top: 3em;
+@media (max-width: 1024px) {
+  .acc_btn--pwdReset2 {
+    bottom: 8em;
   }
-  .acc_btn--signUp {
+}
+
+@media (max-width: 768px) {
+  .acc_btn--pwdReset2 {
+    bottom: 3em;
+  }
+}
+
+@media (max-width: 425px) {
+  .content_p--pwdReset2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -614,51 +758,52 @@ input:placeholder-shown {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .box {
+    padding: .8em 1.1em .8em 1.1em;
   }
 }
 
-.boxes, .content_p--pwdReset2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  margin-top: 2rem;
+.inputField_pwdReset3 {
+  margin-bottom: 1.3em;
 }
 
-.box {
-  border: 2px solid #161859;
-  padding: 1.5rem;
-  margin-left: 1rem;
+.acc_btn--pwdReset3 {
+  bottom: 3em;
 }
 
-.pwdReset2_btn--resend {
-  color: #161859;
-  background-color: #F7F7FD;
-  margin-top: 2rem;
-  border-color: #F7F7FD;
-  -webkit-box-shadow: 0px 2px 2px 0px #161859;
-          box-shadow: 0px 2px 2px 0px #161859;
+.submit_pwdReset3 {
+  margin-top: 4em;
+  margin-bottom: 11em;
 }
 
-.pwdReset2_acc {
-  margin-top: 20rem;
+.content_p--pwdReset3 {
+  margin-bottom: .7em;
 }
 
-.pwdReset3_input2 {
-  margin-top: 2rem;
+@media (max-width: 1440px) {
+  .acc_btn--pwdReset3 {
+    bottom: 14em;
+  }
 }
 
-.pwdReset3_acc {
-  margin-top: 24rem;
+@media (max-width: 1024px) {
+  .acc_btn--pwdReset3 {
+    bottom: 8em;
+  }
 }
 
-.pwdReset3_btn {
-  margin-top: 6rem;
+@media (max-width: 768px) {
+  .acc_btn--pwdReset3 {
+    bottom: 2em;
+  }
 }
 
 .profile_input {
-  margin-top: 2rem;
+  margin-top: 1.5em;
 }
 
 .profile_pics {
@@ -669,7 +814,7 @@ input:placeholder-shown {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2em;
   position: relative;
 }
 
@@ -684,5 +829,28 @@ input:placeholder-shown {
   padding: .6rem;
   -webkit-filter: invert(99%) sepia(3%) saturate(207%) hue-rotate(351deg) brightness(112%) contrast(100%);
           filter: invert(99%) sepia(3%) saturate(207%) hue-rotate(351deg) brightness(112%) contrast(100%);
+}
+
+.btn_profile {
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+@media (max-width: 1440px) {
+  .h3_title--profile {
+    top: 10em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .h3_title--profile {
+    top: 5em;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+  .h3_title--profile {
+    top: 3em;
+  }
 }
 /*# sourceMappingURL=easeIt.css.map */

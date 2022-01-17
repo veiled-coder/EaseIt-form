@@ -1,3 +1,39 @@
-.pwdReset_acc{
-    margin-top: 37rem;
+
+.inputField_pwdReset{
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+.btn_pwdReset{
+ margin-bottom: 17em;
+}
+.acc_btn--pwdReset{
+    bottom: 4em;
+}
+// media queries
+
+@media (max-width:1440px){
+
+    .acc_btn--pwdReset{
+        bottom: 14em;
+    }
+}
+
+
+@media (max-width:1024px){
+   
+    .acc_btn--pwdReset{
+        bottom: 6em;
+    }
+}
+@media (max-width:768px){
+   
+    .acc_btn--pwdReset{
+        bottom: 3em;
+    }
+}
+@media (max-width:425px){
+   
+    .acc_btn--pwdReset{
+        bottom: 2em;
+    }
 }
