@@ -1,61 +1,62 @@
-.boxes{
-    display: flex;
-    align-self: center;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+.boxes {
+  display: flex;
+  align-self: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
-.box{
-    border: 2px solid $color-deepblue;
-    padding:1.2em 1.5em 1.2em 1.5em;
-    margin-left: .4em;
+input[class="box"] {
+  width: 3em;
+  height: 2.5em;
+  background-color: transparent;
+  border: 2px solid $color-deepblue;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
 }
-.btn--resend{
-    color: $color-deepblue;
-    background-color: $color-white;
-    border-color: $color-white;
-    box-shadow: 0px 2px 2px 0px $color-deepblue;
+.btn--resend {
+  color: $color-deepblue;
+  background-color: $color-white;
+  border-color: $color-white;
+  box-shadow: 0px 2px 2px 0px $color-deepblue;
 }
-.acc_btn--pwdReset2{
- bottom: 4em;
+.acc_btn--pwdReset2 {
+  bottom: 4em;
 }
-.content_p--receive,.content_p--pwdReset2{
-    align-self: center;
+.content_p--receive,
+.content_p--pwdReset2 {
+  align-self: center;
 }
-.submit_pwdReset2{
-margin-bottom: 2em;
+.submit_pwdReset2 {
+  margin-bottom: 2em;
 }
-.btn--resend{
-    margin-bottom: 10em;
+.btn--resend {
+  margin-bottom: 10em;
 }
 // media queries
 
-@media (max-width:1440px){
-    .acc_btn--pwdReset2{
-        bottom: 14em;
-       } 
+@media (max-width: 1440px) {
+  .acc_btn--pwdReset2 {
+    bottom: 14em;
+  }
 }
 
-@media (max-width:1024px){
-    .acc_btn--pwdReset2{
-        bottom: 8em;
-       } 
+@media (max-width: 1024px) {
+  .acc_btn--pwdReset2 {
+    bottom: 8em;
+  }
 }
 
-@media (max-width:768px){
-    .acc_btn--pwdReset2{
-        bottom: 3em;
-       } 
+@media (max-width: 768px) {
+  .acc_btn--pwdReset2 {
+    bottom: 3em;
+  }
 }
-@media (max-width:425px){
-    
-       .content_p--pwdReset2{
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-       }
-       .box{
-     
-        padding:.8em 1.1em .8em 1.1em;
-     
-    }
+@media (max-width: 425px) {
+  .content_p--pwdReset2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    padding: 0.8em 1.1em 0.8em 1.1em;
+  }
 }

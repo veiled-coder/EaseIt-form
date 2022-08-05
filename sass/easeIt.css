@@ -702,10 +702,13 @@ input:placeholder-shown {
   margin-bottom: 1.5em;
 }
 
-.box {
+input[class="box"] {
+  width: 3em;
+  height: 2.5em;
+  background-color: transparent;
   border: 2px solid #161859;
-  padding: 1.2em 1.5em 1.2em 1.5em;
-  margin-left: .4em;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
 }
 
 .btn--resend {
@@ -720,7 +723,8 @@ input:placeholder-shown {
   bottom: 4em;
 }
 
-.content_p--receive, .content_p--pwdReset2 {
+.content_p--receive,
+.content_p--pwdReset2 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -766,7 +770,7 @@ input:placeholder-shown {
             align-items: center;
   }
   .box {
-    padding: .8em 1.1em .8em 1.1em;
+    padding: 0.8em 1.1em 0.8em 1.1em;
   }
 }
 
